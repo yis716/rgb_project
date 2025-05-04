@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="45" viewBox="0 0 50 45">
+  <g id="그룹_305" data-name="그룹 305" transform="translate(-1451 -2024)">
+    <g id="사각형_126" data-name="사각형 126" transform="translate(1469 2024)" fill="none" stroke="#006eff" stroke-width="3">
+      <path d="M5,0H9a5,5,0,0,1,5,5V45a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" stroke="none"/>
+      <path d="M5,1.5H9A3.5,3.5,0,0,1,12.5,5V43.5a0,0,0,0,1,0,0H1.5a0,0,0,0,1,0,0V5A3.5,3.5,0,0,1,5,1.5Z" fill="none"/>
+    </g>
+    <g id="사각형_127" data-name="사각형 127" transform="translate(1484 2039)" fill="none" stroke="#006eff" stroke-width="3">
+      <path d="M5,0H9a5,5,0,0,1,5,5V30a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" stroke="none"/>
+      <path d="M5,1.5H9A3.5,3.5,0,0,1,12.5,5V28.5a0,0,0,0,1,0,0H1.5a0,0,0,0,1,0,0V5A3.5,3.5,0,0,1,5,1.5Z" fill="none"/>
+    </g>
+    <g id="사각형_128" data-name="사각형 128" transform="translate(1454 2053)" fill="none" stroke="#006eff" stroke-width="3">
+      <path d="M5,0H9a5,5,0,0,1,5,5V16a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" stroke="none"/>
+      <path d="M5,1.5H9A3.5,3.5,0,0,1,12.5,5v9.5a0,0,0,0,1,0,0H1.5a0,0,0,0,1,0,0V5A3.5,3.5,0,0,1,5,1.5Z" fill="none"/>
+    </g>
+    <line id="선_34" data-name="선 34" x2="47" transform="translate(1452.5 2067.5)" fill="none" stroke="#006eff" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>
