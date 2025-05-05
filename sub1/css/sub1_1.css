@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+
+/* visual영역 */
+.visual {
+    width: 100%;
+    height: 992px;
+    background: url(../images/whobg.png) no-repeat center/cover;
+    padding-top: 88px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual .visualTit {
+    width: 100%;
+    margin-bottom: 44px;
+}
+
+.visual h3 {
+    font-size: 10.625rem;
+    font-family: var(--subfont-famliy);
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+}
+
+.visual h3::before {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 400px;
+    height: 10px;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.visual h3::after {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 400px;
+    height: 10px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.visual .visTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin-left: auto;
+}
+
+.visual .visTxt p {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+/* content1영역 */
+
+.content1 {
+    position: relative;
+    height: 1600px;
+}
+
+.content1 .conInner {
+    padding: 160px 0;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.content1 h4{
+    font-size: 3.125rem;
+    color: var(--main-color);
+    font-family: var(--subfont-famliy);
+    width: 400px;
+}
+
+.content1 .vision,
+.content1 .mission{
+    display: flex;
+}
+
+.content1 .visIn {
+    width: 916px;
+    height: 600px;
+    background: #f8f8f8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 96px;
+}
+
+.content1 .visIn .moveAni {
+    width: 302px;
+    height: 302px;
+    position: relative;
+    margin: 0 auto 50px;
+}
+
+.content1 .moveAni .move {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.content1 .moveAni .move::before {
+    display: block; 
+    content: ''; 
+    width: 0px; 
+    opacity: 0; 
+    height: 100%; 
+    border-radius: 50%; 
+    border: 6px solid var(--main-color); 
+    animation: vnm-vision-circle 2s var(--delay) infinite linear; 
+    transform: scaleX(1); 
+    will-change: width, opacity;}
+
+@keyframes vnm-vision-circle {
+    0% {width: 0px; opacity: 0;}
+    5% {width: 10px; opacity: 1;}
+    95% {width: 100%; opacity: 0.1;}
+    100% {width: 105%; opacity: 0;}
+}
+
+.content1 .conInner .vmtxt{
+    text-align: center;
+}
+
+.content1 .conInner .vmtxt p{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: var(--subfont-famliy);
+    margin-bottom: 20px;
+}
+
+.content1 .conInner .vmtxt span {
+    line-height: 180%;
+    color: var(--subtext-color);
+}
+
+/* content2 */
+
+.content2{
+    width: 100%;
+    height: 900px;
+    background: #111833;
+    z-index: 1;
+    position: relative;
+}
+
+/* .content2 .twinTop {
+    width: 100%;
+    position: relative;
+} */
+.content2  h4 {
+    font-size: 320px;
+    font-family: var(--subfont-famliy);
+    color: rgba(0,110,255,.1);
+    text-align: center;
+    padding-top: 76px;
+    position: absolute;
+    left: 50%;
+    top: 76px;
+    transform: translateX(-50%);
+}
+
+.content2 > p {
+    font-size: 3.5rem;
+    color: #fff;
+    text-align: center;
+}
