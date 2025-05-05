@@ -308,11 +308,11 @@ font-family: "Roboto", sans-serif;
     width: 1px;
     height: 16px;
     transform: translate(0, -50%);
-    background: rgba(136,136,136,.2);
+    /* background: rgba(136,136,136,.2); */
 }
 
 #gnb .dropdownmenu li .depth1:hover{
-    color: #006EFF;
+    color: var(--main-color);
     font-weight: 500;
     
 }
@@ -348,12 +348,13 @@ font-family: "Roboto", sans-serif;
 
 #headerArea #gnb .dropdownmenu li ul li a {
     display: block;
-    color: #666;
+    color: #888;
+    font-weight: 400;
     transition: all .5s;
 }
 
 #headerArea #gnb .dropdownmenu .menu ul li a:hover {
-    color: #3366CC;
+    color: var(--main-color);
 }
 
 /* nav_lang */

@@ -132,11 +132,11 @@
     height: 100%; 
     border-radius: 50%; 
     border: 6px solid var(--main-color); 
-    animation: vnm-vision-circle 2s var(--delay) infinite linear; 
+    animation: vision-move 2s var(--delay) infinite linear; 
     transform: scaleX(1); 
     will-change: width, opacity;}
 
-@keyframes vnm-vision-circle {
+@keyframes vision-move {
     0% {width: 0px; opacity: 0;}
     5% {width: 10px; opacity: 1;}
     95% {width: 100%; opacity: 0.1;}
@@ -160,33 +160,270 @@
 }
 
 /* content2 */
-
-.content2{
+.content2 {
     width: 100%;
     height: 900px;
     background: #111833;
-    z-index: 1;
     position: relative;
+    margin-bottom: 464px;
+    z-index: 1;
+    /* overflow: hidden; */
 }
 
-/* .content2 .twinTop {
+.content2 h4 {
     width: 100%;
-    position: relative;
-} */
-.content2  h4 {
-    font-size: 320px;
+    font-size: 20rem;
     font-family: var(--subfont-famliy);
-    color: rgba(0,110,255,.1);
+    color: rgba(0, 110, 255, 0.08);
     text-align: center;
-    padding-top: 76px;
     position: absolute;
     left: 50%;
     top: 76px;
     transform: translateX(-50%);
+    z-index: 0;
 }
 
-.content2 > p {
+.content2>p {
     font-size: 3.5rem;
     color: #fff;
     text-align: center;
+    padding-top: 214px;
+}
+
+.content2 .conInner {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    z-index: 1;
+}
+
+.content2 .card {
+    display: flex;
+    gap: 10px;
+}
+
+.content2 .card li {
+    background: #F2F2F2;
+    border-radius: 30px;
+    padding: 30px 20px;
+    width: 385px;
+    height: 420px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.16);
+    text-align: center;
+
+}
+
+.content2 .iconWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.content2 .iconWrap .num {
+    font-size: 1.5rem;
+    color: #aaa;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.content2 .textWrap p {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.content2 .textWrap span {
+    color: var(--subtext-color);
+    line-height: 170%;
+}
+
+.content2 .textWrap .twtEn {
+    font-family: var(--subfont-famliy);
+}
+
+.content2 .conInner ul li:nth-of-type(1),
+.content2 .conInner ul li:nth-of-type(2){
+    position: relative;
+}
+
+.content2 .conInner ul li:nth-of-type(1)::after,
+.content2 .conInner ul li:nth-of-type(2)::after{
+    content: '\276F';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #767676;
+    color: #00A2E9;
+    font-weight: 700;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    right: -6%;
+    transform: translateY(160%);
+    line-height: 140%;
+    z-index: 2;
+}
+
+/* history영역 */
+.history .container{
+    position: relative;
+}
+
+.history .lineCover {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+}
+
+.history .lineCover .circle {
+    width: 982px;
+    height: 982px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+}
+
+.history .lineCover .line {
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.history .lineCover .line::before {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ddd;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,-50%);
+}
+
+.history .hisCon {
+    display: flex;
+}
+
+.history .conTop{
+    padding-top: 104px;
+    margin-bottom: 230px;
+}
+
+.history .hisCon .tit{
+    width: 50%;
+    color: #ddd;
+}
+
+.history .hisCon .tit h4{
+    font-size: 18.313rem;
+    font-family: var(--subfont-famliy);
+    margin-bottom: 12px;
+}
+
+.history .hisCon .tit p {
+    font-size: 2.5rem;
+}
+
+.history .hisCon .hisYear {
+    width: 50%;
+    padding: 170px 0 0 97px;
+    margin-bottom: 100px;
+}
+
+.history .hisCon .hisYear .year {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.history .hisCon .hisYear .year.first{
+    color: var(--main-color);
+}
+
+.history .hisCon .hisYear .round {
+    width: 76px;
+    height: 1px;
+    background: #aaa;
+    position: absolute;
+    top: 50%;
+    right: 103%;
+}
+
+.history .hisCon .hisYear .round::after{
+    content: '';
+    display: block;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: #aaa;
+    border: 11px solid #e5e5e5;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+
+}
+
+.history .hisCon .hisYear .round.first{
+    background: var(--main-color);
+}
+
+.history .hisCon .hisYear .round.first::after {
+    background: var(--main-color);
+    border-color: #B2D3FF;
+}
+
+.history .hisCon .hisYear .con {
+    font-size: 1.125rem;
+}
+
+.history .hisCon .hisYear .con .conStr{
+    font-weight: 700;
+}
+
+.history .hisCon .hisYear .con .conStr .conColor {
+    color: var(--main-color);
+}
+
+.history .hisCon .hisYear .con li{
+    position: relative;
+    padding: 0 0 20px 25px;
+}
+
+.history .hisCon .hisYear .con li::before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #767676;
+    position: absolute;
+    top: 31%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.history .hisCon .hisYear .con .conStr::before {
+    background: var(--main-color);
 }
