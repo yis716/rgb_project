@@ -42,7 +42,6 @@ var on_off=false;  //false(안오버)  true(오버)
         };      
     });
 
-
     //2depth 열기/닫기
     $('.dropdownmenu').hover(
         function() { 

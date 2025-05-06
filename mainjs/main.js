@@ -15,3 +15,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// about영역 sticky
+window.addEventListener('scroll', function () {
+  const aboutBox = document.querySelector('.aboutUs');
+  const ul = document.querySelector('.aboutUs .aboutRight ul');
+
+  const winScrollY = window.scrollY;
+  const aboutTop = aboutBox.offsetTop;
+
+  // 스크롤 시작점부터 얼마나 이동했는지 계산
+  const scrollOffset = winScrollY - aboutTop;
+
+  if (scrollOffset >= 0 && scrollOffset < 2000) {
+    ul.style.top = `${200 - scrollOffset}px`;
+  }
+});
+

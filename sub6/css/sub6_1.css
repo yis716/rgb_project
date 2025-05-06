@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+.inquiry .title {
+    padding: 248px 0 114px;
+}
+
+.inquiry .title  h3{
+    font-size: 10.625rem;
+    font-weight: 500;
+    font-family: var(--subfont-famliy);
+    position: relative;
+}
+
+.inquiry .title h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 152px;
+    right: 87%;
+    transform: translateX(-10%);
+    margin-right: 34px;
+    background: #000;
+    width: 100vw;
+    height: 10px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 36px;
+}
+
+.inquiry .title p {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    padding-left: 11px;
+}
+
+.inquiry .title span {
+    color: var(--subtext-color);
+    padding-left: 11px;
+}
+
+.contact-form-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(241,241,241, .5);
+    padding: 133px 100px;
+    border-radius: 20px;
+}
+
+.contact-form-wrapper h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* 탭 메뉴 */
+.category-tabs ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #e0e0e0;
+    /* margin-bottom: 5px; */
+}
+
+.category-tabs{
+    margin-bottom: 40px;
+}
+
+.category-tabs li {
+    width: 33.33%;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.category-tabs li a {
+    padding: 17px 0;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.category-tabs li.active a {
+    background: var(--main-color);
+    color: white;
+    
+}
+.category-tabs li a span {
+    font-size: 1.125rem;
+    color: rgba(0,0,0,.5);
+    padding-left: 8px;
+}
+
+.category-tabs li.active a span{
+    color: rgba(255,255,255,.5);
+}
+
+
+
+/* 폼 */
+.inquiry-form .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.inquiry-form label {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.required {
+    color: #007aff;
+}
+
+.inp{
+    color: #bfbfbf;
+    width: 1200px;
+        padding: 11px 0 11px 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1.125rem;
+        background: #fff;
+}
+/* .inquiry-form input,
+.inquiry-form textarea {
+    width: 1200px;
+    padding: 11px 0 11px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    background: #fff;
+} */
+
+
+.form-group2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.inquiry-form textarea {
+    height: 320px;
+    align-items: flex-start;
+}
+
+/* 체크박스 */
+.form-agreement {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+.form-agreement label {
+    display: block;
+    margin: 4px 0;
+}
+
+.form-agreement span {
+    text-decoration: underline;
+    color: #007aff;
+}
+
+.req {
+    color: #007aff;
+}
+
+.opt {
+    color: #aaa;
+}
+
+/* 버튼 */
+.form-actions {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.form-actions button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-actions button:hover {
+    background: #333;
+}

@@ -190,6 +190,7 @@ font-family: "Noto Sans KR", sans-serif;
 font-family: "Roboto", sans-serif;
 */
 :root {
+    --padding-subtop: 88px;
     --padding-top: 250px;
     --main-color: #006EFF;
     --subtext-color: #585858;
@@ -226,7 +227,7 @@ font-family: "Roboto", sans-serif;
     background: #ddd;
     position: absolute;
     left: 0;
-    top: 88px;
+    top: 87px;
     opacity: 0.5;
 }
 

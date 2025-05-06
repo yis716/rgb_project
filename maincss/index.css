@@ -60,15 +60,21 @@ font-family: "Roboto", sans-serif;
 
 /* about us 영역 */
 .aboutUs{
+    position: relative;
+    height: 1200px;
     display: flex;
     align-items: flex-start;
     gap: 50px;
 }
 
 .aboutUs .aboutLeft{
+    position: sticky;
+    top: 150px;
+    height: fit-content;
     padding: 250px 0 300px;
     margin-right: auto;
 }
+
 .aboutUs .aboutLeft h3{
     font-size: 1.625rem;
     color: var(--main-color);
@@ -132,15 +138,22 @@ font-family: "Roboto", sans-serif;
 }
 
 .aboutUs .aboutRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
     width: 50%;
     margin-top: auto;
     /* overflow: hidden; */
 }
 .aboutUs .aboutRight ul{
+    position: absolute;
+    top: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 80px 30px;
     width: 100%;
+    transition: top .3s ease-out;
 }
 
 .aboutUs .aboutRight li{

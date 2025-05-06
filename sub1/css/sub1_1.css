@@ -6,7 +6,7 @@
     width: 100%;
     height: 992px;
     background: url(../images/whobg.png) no-repeat center/cover;
-    padding-top: 88px;
+    padding-top: var(--padding-subtop);
     color: #fff;
     display: flex;
     flex-direction: column;
