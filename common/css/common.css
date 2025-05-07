@@ -411,6 +411,7 @@ font-family: "Roboto", sans-serif;
 #footer{
     width: 100%;
     background: #111833;
+    position: relative;
 }
 
 #footer .inner {
@@ -573,36 +574,39 @@ font-family: "Roboto", sans-serif;
     margin: 0 85px;
 }
 
-
-
-
-
-
-
 /* topmove */
-
-#footerArea .top_move {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(to right, rgba(0, 113, 187, 1) 0%, rgba(108, 206, 245, 1) 100%);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .3);
+#footer .topBtn {
+    /* display: none; */
     position: fixed;
-    left: 50%;
+    right: 0;
     bottom: 180px;
-    margin-left: 800px;
-    border-radius: 30px;
+    margin-right: 40px;
     z-index: 50;
-    display: none;
 }
 
-#footerArea .top_move span {
-    display: block;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-top: 27px;
+#footer .topBtn a{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .topBtn .top_chat {
+    background: #00C5FF;
+    margin-bottom: 5px;
+}
+
+#footer .topBtn .top_mail {
+    background: var(--main-color);
+    margin-bottom: 15px;
+}
+
+#footer .topBtn .top_move {
+    background: #fff;
+    border: 1px solid #ddd;
 }
 
 /* modal */

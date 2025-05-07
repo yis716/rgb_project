@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.news .title {
+    padding: 248px 0 157px;
+}
+
+.news .title  h3{
+    font-size: 10.625rem;
+    font-weight: 500;
+    font-family: var(--subfont-famliy);
+    position: relative;
+}
+
+.news .title h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 152px;
+    right: 87%;
+    transform: translateX(-10%);
+    margin-right: 34px;
+    background: #000;
+    width: 100vw;
+    height: 10px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 36px;
+}
+
+.news .title p {
+    font-size: 2.5rem;
+    padding-left: 11px;
+}

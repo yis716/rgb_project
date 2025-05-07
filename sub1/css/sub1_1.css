@@ -139,8 +139,88 @@
 @keyframes vision-move {
     0% {width: 0px; opacity: 0;}
     5% {width: 10px; opacity: 1;}
-    95% {width: 100%; opacity: 0.1;}
+    95% {width: 100%; opacity: .1;}
     100% {width: 105%; opacity: 0;}
+}
+
+.content1 .circleCon {
+    position: relative;
+    width: 358px;
+    height: 358px;
+    margin: 0 auto;
+}
+
+  /* 중심 원 */
+.content1 .coreCircle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid rgba(0, 110, 255, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 0; */
+}
+
+/* 좌측 타원 궤도 */
+.content1 .leftCircle,
+.content1 .rigthCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    width: 253px;
+    height: 70px;
+}
+
+/* 각각 회전 기울기 조절 */
+.content1 .leftCircle {
+    border: 6px solid rgba(0,110,255,.2);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 2;
+}
+
+.content1 .rigthCircle {
+    border: 6px solid #006EFF;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 1;
+}
+
+/* 바깥 회전 원 */
+.content1 .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    border: 6px solid transparent;
+    border-top: 6px solid #006EFF;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 6s linear infinite;
+}
+
+
+.content1 .out1 {
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation-delay: 0s;
+}
+
+.content1  .out2 {
+    transform: translate(-50%, -50%) rotate(120deg);
+    animation-delay: -2s;
+}
+
+.content1  .out3 {
+    transform: translate(-50%, -50%) rotate(240deg);
+    animation-delay: -4s;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 .content1 .conInner .vmtxt{

@@ -39,7 +39,7 @@
 
 .contact-form-wrapper {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 278px;
     background: rgba(241,241,241, .5);
     padding: 133px 100px;
     border-radius: 20px;
@@ -131,7 +131,11 @@
     font-size: 1.125rem;
     background: #fff;
 } */
-
+.checkTxt {
+    text-decoration: underline;
+    color: var(--main-color);
+    display: inline;
+}
 
 .form-group2 {
     display: flex;
@@ -145,46 +149,60 @@
 
 /* 체크박스 */
 .form-agreement {
-    margin-top: 20px;
-    font-size: 13px;
-    color: #555;
+    margin: 80px 0 0 176px;
+    font-size: 1.125rem;
+    color: #bfbfbf;
 }
-
+input[type="checkbox" i] {
+    background: #bfbfbf;
+}
 .form-agreement label {
     display: block;
     margin: 4px 0;
 }
 
 .form-agreement span {
-    text-decoration: underline;
-    color: #007aff;
+    
 }
 
 .req {
-    color: #007aff;
+    margin-bottom: 9px;
 }
 
-.opt {
-    color: #aaa;
-}
 
 /* 버튼 */
 .form-actions {
     margin-top: 30px;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
 }
 
 .form-actions button {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 12px 26px;
+    background: #fff;
+    padding: 14px 17px 14px 26px;
     border-radius: 30px;
-    font-size: 15px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all 0.3s ease-out;
+    border: 1px solid #BDBDBD;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
 }
 
 .form-actions button:hover {
     background: #333;
+    color: #fff;
+}
+
+.form-actions button .material-symbols-outlined{
+    font-size: 16px;
+    color: #707070;
+}
+
+.form-actions button:hover .material-symbols-outlined{
+    color: #fff;
 }
