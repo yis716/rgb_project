@@ -309,7 +309,7 @@ font-family: "Roboto", sans-serif;
     width: 1px;
     height: 16px;
     transform: translate(0, -50%);
-    /* background: rgba(136,136,136,.2); */
+    background: rgba(136,136,136,.2);
 }
 
 #gnb .dropdownmenu li .depth1:hover{
@@ -317,18 +317,6 @@ font-family: "Roboto", sans-serif;
     font-weight: 500;
     
 }
-
-/* #headerArea #gnb .dropdownmenu li:hover .depth1::after {
-    content: "";
-    display: block;
-    width: 70%;
-    height: 1px;
-    background: #006EFF;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    z-index: -1;
-} */
 
 /* 2depth */
 #headerArea #gnb .dropdownmenu li ul {
@@ -392,20 +380,6 @@ font-family: "Roboto", sans-serif;
     color: #006EFF;
     font-weight: 500;
 }
-/* .nav_lang li.active{
-    
-    color: #006EFF;
-} */
-
-/* #headerArea .nav_lang li:hover a::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: #037AFE;
-    left: 0;
-    bottom: 0;
-} */
 
 /* 푸터 공통 css */
 #footer{
@@ -418,7 +392,6 @@ font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 150px; */
     padding: 130px 0;
 }
 

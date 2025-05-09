@@ -17,11 +17,11 @@ var on_off=false;  //false(안오버)  true(오버)
             var scroll = $(window).scrollTop();  //스크롤의 거리
             
             if(scroll<smh-50 ){
-                $(this).css('background','#fff').css('box-shadow','none'); 
-                //$('.dropdownmenu li a').css('color','#333');
+                $(this).css('background','#fff').css('border-bottom','1px solid #ebebeb'); 
+
             }else{
                 $(this).css('background','#fff'); 
-                //$('.dropdownmenu li a').css('color','#333');
+
             }
         on_off=false;    
     });
@@ -33,7 +33,7 @@ var on_off=false;  //false(안오버)  true(오버)
 
             if(scroll>smh-50){//스크롤이 비주얼의 높이-header높이 까지 내리면
                 $('#headerArea').css('background','#fff')
-                //$('.dropdownmenu li a').css('color','#333');
+
             }else{//스크롤 내리기 전 디폴트(마우스올리지않음)
             if(on_off==false){
                 $('#headerArea').css('background','#fff').css('box-shadow','none');

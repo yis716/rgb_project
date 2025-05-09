@@ -77,11 +77,12 @@
     font-size: 1.25rem;
     text-align: center;
     font-weight: 500;
+    transition: all .3s ease-out;
 }
 
 .category-tabs li.active a {
     background: var(--main-color);
-    color: white;
+    color: #fff;
     
 }
 .category-tabs li a span {
@@ -94,7 +95,14 @@
     color: rgba(255,255,255,.5);
 }
 
+.category-tabs li:hover a {
+    background: var(--main-color);
+    color: #fff;
+}
 
+.category-tabs li:hover a span {
+    color: rgba(255, 255, 255, .5);
+}
 
 /* 폼 */
 .inquiry-form .form-group {
@@ -114,13 +122,12 @@
 }
 
 .inp{
-    color: #bfbfbf;
     width: 1200px;
-        padding: 11px 0 11px 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        font-size: 1.125rem;
-        background: #fff;
+    padding: 11px 0 11px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    background: #fff;
 }
 /* .inquiry-form input,
 .inquiry-form textarea {

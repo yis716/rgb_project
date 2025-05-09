@@ -83,7 +83,7 @@
     width: 100%;
 }
 
-.content1 h4{
+.content1 h4 {
     font-size: 3.125rem;
     color: var(--main-color);
     font-family: var(--subfont-famliy);
@@ -91,7 +91,7 @@
 }
 
 .content1 .vision,
-.content1 .mission{
+.content1 .mission {
     display: flex;
 }
 
@@ -114,33 +114,50 @@
 }
 
 .content1 .moveAni .move {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    width: 100%; 
-    height: 100%; 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .content1 .moveAni .move::before {
-    display: block; 
-    content: ''; 
-    width: 0px; 
-    opacity: 0; 
-    height: 100%; 
-    border-radius: 50%; 
-    border: 6px solid var(--main-color); 
-    animation: vision-move 2s var(--delay) infinite linear; 
-    transform: scaleX(1); 
-    will-change: width, opacity;}
+    display: block;
+    content: '';
+    width: 0px;
+    opacity: 0;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid var(--main-color);
+    animation: vision-move 2s var(--delay) infinite linear;
+    transform: scaleX(1);
+    will-change: width, opacity;
+}
 
 @keyframes vision-move {
-    0% {width: 0px; opacity: 0;}
-    5% {width: 10px; opacity: 1;}
-    95% {width: 100%; opacity: .1;}
-    100% {width: 105%; opacity: 0;}
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+
+    5% {
+        width: 10px;
+        opacity: 1;
+    }
+
+    95% {
+        width: 100%;
+        opacity: .1;
+    }
+
+    100% {
+        width: 105%;
+        opacity: 0;
+    }
 }
 
 .content1 .circleCon {
@@ -150,7 +167,7 @@
     margin: 0 auto;
 }
 
-  /* 중심 원 */
+/* 중심 원 */
 .content1 .coreCircle {
     width: 150px;
     height: 150px;
@@ -163,7 +180,7 @@
     /* z-index: 0; */
 }
 
-/* 좌측 타원 궤도 */
+
 .content1 .leftCircle,
 .content1 .rigthCircle {
     position: absolute;
@@ -177,7 +194,7 @@
 
 /* 각각 회전 기울기 조절 */
 .content1 .leftCircle {
-    border: 6px solid rgba(0,110,255,.2);
+    border: 6px solid rgba(0, 110, 255, .2);
     transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 2;
 }
@@ -188,46 +205,35 @@
     z-index: 1;
 }
 
-/* 바깥 회전 원 */
-.content1 .circle {
+.orbitSVG {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 300px;
-    border: 6px solid transparent;
-    border-top: 6px solid #006EFF;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    animation: spin 6s linear infinite;
+    top: 0;
+    left: 0;
+    width: 358px;
+    height: 358px;
+    pointer-events: none;
 }
 
-
-.content1 .out1 {
-    transform: translate(-50%, -50%) rotate(0deg);
-    animation-delay: 0s;
+.orbit {
+    transform-origin: 150px 150px;
+    animation: orbitSpin 8s linear infinite;
 }
 
-.content1  .out2 {
-    transform: translate(-50%, -50%) rotate(120deg);
-    animation-delay: -2s;
+@keyframes orbitSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.content1  .out3 {
-    transform: translate(-50%, -50%) rotate(240deg);
-    animation-delay: -4s;
-}
-
-@keyframes spin {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-.content1 .conInner .vmtxt{
+.content1 .conInner .vmtxt {
     text-align: center;
 }
 
-.content1 .conInner .vmtxt p{
+.content1 .conInner .vmtxt p {
     font-size: 32px;
     font-weight: 500;
     font-family: var(--subfont-famliy);
@@ -326,12 +332,12 @@
 }
 
 .content2 .conInner ul li:nth-of-type(1),
-.content2 .conInner ul li:nth-of-type(2){
+.content2 .conInner ul li:nth-of-type(2) {
     position: relative;
 }
 
 .content2 .conInner ul li:nth-of-type(1)::after,
-.content2 .conInner ul li:nth-of-type(2)::after{
+.content2 .conInner ul li:nth-of-type(2)::after {
     content: '\276F';
     display: flex;
     justify-content: center;
@@ -352,7 +358,7 @@
 }
 
 /* history영역 */
-.history .container{
+.history .container {
     position: relative;
 }
 
@@ -394,24 +400,24 @@
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .history .hisCon {
     display: flex;
 }
 
-.history .conTop{
+.history .conTop {
     padding-top: 104px;
     margin-bottom: 230px;
 }
 
-.history .hisCon .tit{
+.history .hisCon .tit {
     width: 50%;
     color: #ddd;
 }
 
-.history .hisCon .tit h4{
+.history .hisCon .tit h4 {
     font-size: 18.313rem;
     font-family: var(--subfont-famliy);
     margin-bottom: 12px;
@@ -435,7 +441,7 @@
     position: relative;
 }
 
-.history .hisCon .hisYear .year.first{
+.history .hisCon .hisYear .year.first {
     color: var(--main-color);
 }
 
@@ -448,7 +454,7 @@
     right: 103%;
 }
 
-.history .hisCon .hisYear .round::after{
+.history .hisCon .hisYear .round::after {
     content: '';
     display: block;
     width: 31px;
@@ -465,7 +471,7 @@
 
 }
 
-.history .hisCon .hisYear .round.first{
+.history .hisCon .hisYear .round.first {
     background: var(--main-color);
 }
 
@@ -478,7 +484,7 @@
     font-size: 1.125rem;
 }
 
-.history .hisCon .hisYear .con .conStr{
+.history .hisCon .hisYear .con .conStr {
     font-weight: 700;
 }
 
@@ -486,7 +492,7 @@
     color: var(--main-color);
 }
 
-.history .hisCon .hisYear .con li{
+.history .hisCon .hisYear .con li {
     position: relative;
     padding: 0 0 20px 25px;
 }

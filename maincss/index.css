@@ -4,12 +4,6 @@ font-family: "Noto Sans KR", sans-serif;
 font-family: "Roboto", sans-serif;
 */
 
-
-/* main영역 */
-/* .{
-    width: calc(100% - 170px);
-    margin: 0 auto;
-} */
 /* intro영역 */
 .intro{
     width: 100%;
@@ -384,17 +378,6 @@ font-family: "Roboto", sans-serif;
     position: relative;
     z-index: 1;
 }
-
-/* .smart .accordion .list .txt a::before {
-    z-index: 0;
-} */
-/* .smart .accordion .list .txt a:hover {
-    background-color: transparent;
-    color: #fff;
-} */
-/* .smart .accordion .list .txt a::after {
-    border-color: #fff;
-} */
 
 .smart .accordion .list .tag {
     position: absolute;
